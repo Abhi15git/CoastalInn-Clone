@@ -1,0 +1,15 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+.width-full{
+   width: 100%;
+}
+.width-custom{
+    width: 90%;
+    margin: auto;
+}
+.width-half{
+    width: 50%;
+    margin: auto;
+}
