@@ -1,15 +1,28 @@
-*{
-    margin: 0%;
-    padding: 0%;
+* {
+  margin: 0%;
+  padding: 0%;
 }
-.width-full{
-   width: 100%;
+.width-full {
+  width: 100%;
 }
-.width-custom{
-    width: 90%;
-    margin: auto;
+.width-custom {
+  width: 80%;
+  margin: auto;
 }
-.width-half{
-    width: 50%;
-    margin: auto;
+.width-half {
+  width: 50%;
+  margin: auto;
+}
+.width_fotter {
+  width: 65%;
+  margin: auto;
+}
+.width-less {
+  width: 90%;
+  margin: auto;
+}
+
+.width-gall {
+  width: 8%;
+  margin: auto;
 }
