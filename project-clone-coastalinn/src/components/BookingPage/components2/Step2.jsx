@@ -10,12 +10,12 @@ import Paper from '@material-ui/core/Paper';
 import { Typography } from '@material-ui/core';
 import CustomizedSelects from './Select';
 import { ContextApi } from '../../../context/StateContext';
+import clsx from 'clsx';
 
 const StyledTableCell = withStyles((theme) => ({
   head: {
     backgroundColor: "rgb(67,74,80)",
     color: theme.palette.common.white,
-    borderBottom: "2px solid white",
   },
   body: {
     fontSize: 12,
@@ -42,6 +42,9 @@ const useStyles = makeStyles({
   flex:{
     display: "flex",
     justifyContent:"flex-start",
+},
+padding:{
+    padding: 5,
 }
 });
 
@@ -116,6 +119,36 @@ export default function Table3() {
        
     ))
 }
+
+<StyledTableRow className={clsx(classes.padding,"tablerow-bg")}>
+                <TableCell className={clsx(classes.padding,"tablerow-bg")} colSpan={9}>
+               <Typography variant="subtitle1" className={classes.flex}>Totals</Typography>
+                </TableCell>
+            </StyledTableRow>
+
+            <StyledTableRow className={clsx(classes.padding,"tablerow-bg")}>
+            <TableCell align="left" className={clsx(classes.padding,"tablerow-bg")} colSpan={6}>
+                </TableCell>
+                <TableCell className={clsx(classes.padding,"tablerow-bg")}  align="right" colSpan={2}>
+               <Typography variant="caption" className={classes.flex}>Room Charges <br /> Taxes </Typography>
+                </TableCell>
+                <TableCell className={clsx(classes.padding,"tablerow-bg")}  align="right" colSpan={1}>
+               <Typography variant="subtitle2" className={classes.flex}>$438 <br />$48 </Typography>
+                </TableCell>
+                
+            </StyledTableRow>
+            <StyledTableRow className={clsx(classes.padding,"tablerow-bg")}>
+            <TableCell className={clsx(classes.padding,"tablerow-bg")} align="left"  colSpan={6}>
+                </TableCell>
+                <TableCell className={clsx(classes.padding,"tablerow-bg")} align="right" colSpan={2}>
+               <Typography variant="h6" className={classes.flex}>Grand Total </Typography>
+                </TableCell>
+                <TableCell className={clsx(classes.padding,"tablerow-bg")} align="right" colSpan={1}>
+               <Typography variant="body1" className={classes.flex}>$480 </Typography>
+                </TableCell>
+                
+            </StyledTableRow>
+
         </TableBody>
       </Table>
     </TableContainer>

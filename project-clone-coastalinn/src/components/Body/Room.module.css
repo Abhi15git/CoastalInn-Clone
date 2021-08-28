@@ -1,0 +1,178 @@
+/* Rooms page CSS Here ========>>>>>>>>>>>>>>>>>>>>> */
+
+.heading {
+  text-align: center;
+  margin-top: 5em;
+  font-family: cursive;
+  font-size: larger;
+  font-weight: bolder;
+}
+
+#Card {
+  display: grid;
+  grid-template-columns: 30% 30% 30%;
+  grid-gap: 2em;
+
+  margin-bottom: 10em;
+}
+.Image {
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+}
+.Image h2 {
+  margin-bottom: 10px;
+  display: inline-block;
+  margin-top: 1em;
+  color: black;
+  font-size: larger;
+  font-weight: bolder;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.Image p {
+  letter-spacing: 0.5px;
+  color: grey;
+}
+.Image p:hover {
+  color: black;
+}
+.Image :hover h2 {
+  color: rgb(66, 135, 174);
+}
+#Card img {
+  height: auto;
+  width: 100%;
+  object-fit: cover;
+  vertical-align: bottom;
+  border-radius: 10px;
+}
+a {
+  text-decoration: none;
+}
+
+.Image a:after {
+  bottom: 0;
+  content: "";
+  display: block;
+  height: 4px;
+  left: 50%;
+  position: relative;
+  background: rgb(66, 135, 174);
+  transition: width 0.3s ease 0s, left 0.3s ease 0s;
+  width: 0;
+}
+.Image a:hover:after {
+  width: 100%;
+  left: 0;
+  border-radius: 5em;
+}
+
+/* =================>>>>>>>>>>>>>>> RoomsDetails card css started here=======>>>>>>>>>>>>>>>>> */
+
+#SEEALLROOMS a {
+  text-align: center;
+  color: rgb(73, 197, 197);
+  font-family: sans-serif;
+  font-weight: bolder;
+  font-size: larger;
+}
+
+/* #SEEALLROOMS a:after {
+  bottom: 0;
+  content: "";
+  display: block;
+  height: 1px;
+  left: 50%;
+
+  position: relative;
+  background: rgb(66, 135, 174);
+  transition: width 0.3s ease 0s, left 0.3s ease 0s;
+  width: 0;
+  text-align: center;
+}
+#SEEALLROOMS a:hover:after {
+  width: 8%;
+  left: 0;
+} */
+
+.Details {
+  display: grid;
+  grid-template-columns: 50% 40%;
+  grid-gap: 5em;
+  margin-bottom: 10em;
+  margin-top: 5em;
+}
+.Details img {
+  height: 60%;
+  width: 100%;
+  border-radius: 10px;
+}
+.Details p {
+  margin-top: 1em;
+  letter-spacing: 1px;
+}
+
+#MoreImage {
+  scroll-behavior: smooth;
+  display: flex;
+  margin: 5px;
+}
+#MoreImage img {
+  height: 80%;
+  width: 100%;
+}
+
+.BookingDiv {
+  background-color: rgb(184, 228, 249);
+  border-radius: 10px;
+  text-align: center;
+}
+
+#date {
+  margin-top: 20em;
+  border: solid rgb(166, 220, 241);
+  background-color: rgb(166, 220, 241);
+
+  font-weight: bold;
+
+  border-radius: 8px;
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  width: 80%;
+  height: 10%;
+  padding: 20px;
+}
+.dateTime {
+  display: grid;
+  grid-row-gap: 2em;
+}
+
+#BookingButton button {
+  width: 180px;
+  height: 40px;
+  background-color: rgb(251, 206, 202);
+  color: rgb(14, 48, 238);
+  border: none;
+  border-radius: 5px;
+  font-style: normal;
+  font-weight: bold;
+  font-size: medium;
+  cursor: pointer;
+  /* margin-left: 20em; */
+}
+
+#BookingButton button:hover {
+  background-color: rgb(3, 63, 95);
+  color: #fff;
+  transition: 0.5s;
+  cursor: pointer;
+}
+#bookingSelect select {
+  width: 200px;
+  height: 35px;
+  margin-top: 15px;
+  border-radius: 5px;
+}

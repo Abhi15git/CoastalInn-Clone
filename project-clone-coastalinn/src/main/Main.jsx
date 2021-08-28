@@ -1,5 +1,6 @@
 import {BrowserRouter, Route, Switch} from "react-router-dom"
 import Home from "../components/Body/Home"
+import RoomDetails from "../components/Body/RoomDetails"
 import Rooms from "../components/Body/Rooms"
 import Booking from "../components/BookingPage/Booking"
 import CoastalInnBeulah from "../components/BookingPage/CoastalInnBeulah"
@@ -17,6 +18,8 @@ const Main = () => {
                 <Route exact path="/rooms" component={Rooms}/>
                 <Route exact path="/properties/coastalinnbeulah" component={CoastalInnBeulah}/>
                 <Route exact path="/properties/coastalinnbeulah/booking/:id" component={Booking}/>
+                  
+                    <Route exact path="/rooms/roomdetails/:id" component={RoomDetails}/>
             </Switch>
             <Footer/>
             </BrowserRouter>

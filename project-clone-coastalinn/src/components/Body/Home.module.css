@@ -1,0 +1,369 @@
+/* .Main {
+  box-sizing: border-box;
+} */
+
+#HomeImage img {
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: 50% 50%;
+  /* position: relative; */
+  display: block;
+
+  height: 100%;
+  width: 100%;
+
+  cursor: grab;
+}
+#InnerHomeImage {
+  background-color: rgba(255, 255, 255, 0.75);
+
+  font-weight: bold;
+  border: 1px solid #fffefe;
+  border-radius: 8px;
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  width: 25%;
+  height: 25%;
+  padding: 20px;
+}
+
+#date {
+  margin-top: 15em;
+  background-color: rgba(173, 219, 242, 0.856);
+
+  font-weight: bold;
+
+  border-radius: 8px;
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  width: 80%;
+  height: 10%;
+  padding: 25px 40px 30px;
+}
+.dateTime {
+  display: grid;
+  grid-template-columns: 30% 30% 10% 30%;
+}
+
+#BookingButton button {
+  width: 180px;
+  height: 40px;
+  background-color: rgb(251, 206, 202);
+  color: rgb(14, 48, 238);
+  border: none;
+  border-radius: 5px;
+  font-style: normal;
+  font-weight: bold;
+  font-size: medium;
+  cursor: pointer;
+  /* margin-left: 20em; */
+  float: right;
+  margin-top: 8px;
+}
+
+#BookingButton button:hover {
+  background-color: rgb(3, 63, 95);
+  color: #fff;
+  transition: 0.5s;
+  cursor: pointer;
+}
+#bookingSelect select {
+  width: 200px;
+  height: 35px;
+  margin-top: 15px;
+  border-radius: 5px;
+}
+.ColourBox {
+  background-color: rgb(235, 235, 233);
+  height: 200px;
+  width: 100%;
+  margin-bottom: 5px;
+}
+.ColourBox p {
+  text-align: center;
+  padding-top: 7%;
+  font-family: sans-serif;
+}
+
+/* About Coastal INN part Code */
+
+.about {
+  background-image: url("https://webbox.imgix.net/images/uokyxzaiauezoxym/a3457c77-b885-4934-b65d-654c832b23da.jpg?auto=format,compress&fit=crop&crop=entropy&w=1200&h=450&q=55 ");
+  filter: blur(0px);
+  -webkit-filter: blur(0px);
+
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100%;
+}
+.Boxx {
+  background-color: rgb(173, 216, 238);
+  background-color: rgb(173, 216, 238, 0.9);
+  color: rgb(12, 12, 12);
+  font-weight: bold;
+  border: 3px solid #f1f1f1;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  min-width: 96.5%;
+  height: 92%;
+  padding: 20px;
+
+  text-align: center;
+}
+#InnerBox {
+  margin-top: 100px;
+}
+
+#content button {
+  width: 180px;
+  height: 40px;
+  background-color: rgb(251, 206, 202);
+  color: rgb(3, 63, 95);
+  border: none;
+  border-radius: 5px;
+  font-style: normal;
+  font-weight: bold;
+  font-size: medium;
+  cursor: pointer;
+  margin: 30px;
+}
+#content button:hover {
+  background-color: rgb(3, 63, 95);
+  color: #fff;
+  transition: 0.5s;
+  cursor: pointer;
+}
+.content h1 {
+  margin-bottom: 8px;
+  font-style: normal;
+  font-family: sans-serif;
+  font-weight: bolder;
+}
+.content p {
+  font-family: sans-serif;
+  text-decoration: black;
+  color: rgb(56, 55, 55);
+}
+
+/* Gallery Css part ====>>>>>>>>>>>>>> */
+
+#MainGallery {
+  background-color: #fff;
+  margin-top: 9em;
+  height: 800px;
+  width: 100%;
+}
+#MainGallery hr {
+  width: 40%;
+  margin-left: 30%;
+}
+.gallery {
+  /* border: solid; */
+  text-align: center;
+}
+.gallery a:after {
+  bottom: 0;
+  content: "";
+  display: block;
+  height: 1px;
+  left: 50%;
+
+  position: relative;
+  background: rgb(66, 135, 174);
+  transition: width 0.3s ease 0s, left 0.3s ease 0s;
+  width: 0;
+}
+.gallery a:hover:after {
+  width: 100%;
+  left: 0;
+}
+.gallery a {
+  text-decoration: none;
+  color: rgb(3, 63, 95);
+  font-family: sans-serif;
+  font-weight: bold;
+  font-size: medium;
+}
+
+.galleryImage {
+  /* border: solid; */
+  display: grid;
+  grid-template-columns: 23% 23% 23% 23%;
+  grid-gap: 1.5em;
+  margin-top: 4em;
+}
+.galleryImage div {
+  overflow: hidden;
+  width: 250px;
+  height: 250px;
+}
+.galleryImage img {
+  width: 100%;
+  height: 100%;
+  border-radius: 8px;
+
+  -webkit-transition: all 2s ease;
+  -moz-transition: all 2s ease;
+  -ms-transition: all 2s ease;
+  transition: all 2s ease;
+}
+.galleryImage img:hover {
+  opacity: 0.2;
+  width: 300px;
+  height: 300px;
+}
+
+/* #effect a:after {
+  bottom: 5;
+  content: "";
+  display: block;
+  height: 1px;
+  left: 50%;
+
+  position: static;
+  background: rgb(66, 135, 174);
+  transition: width 0.3s ease 0s, left 0.3s ease 0s;
+  width: 0;
+}
+#effect a:hover:after {
+  width: 100%;
+
+  left: 0;
+} */
+
+/* Costal  SUITES   CSS Started ===>>>>>>>>>>>>>>>>>*/
+.costal {
+  margin-bottom: 5em;
+}
+.costal img {
+  background-size: cover;
+  max-width: 100%;
+  min-height: 50%;
+}
+#details {
+  background-color: rgb(14, 243, 224); /* Fallback color */
+  background-color: rgb(163, 211, 234); /* Black w/opacity/see-through */
+  color: rgb(7, 7, 7);
+  font-weight: bold;
+  /* border: 3px solid #f1f1f1; */
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  width: 80%;
+  padding: 20px;
+  margin-top: -10em;
+  border-radius: 8px;
+}
+#details p {
+  color: grey;
+  padding-top: 1em;
+}
+#details button {
+  width: 180px;
+  height: 40px;
+  background-color: rgb(251, 206, 202);
+  color: rgb(3, 63, 95);
+  border: cornflowerblue;
+  border-radius: 5px;
+  font-style: normal;
+  font-weight: bold;
+  font-size: medium;
+  cursor: pointer;
+  margin: 30px;
+  float: right;
+  margin-top: -3em;
+}
+
+#details button:hover {
+  background-color: rgb(3, 63, 95);
+  color: #fff;
+  transition: 0.5s;
+  cursor: pointer;
+}
+
+#connect {
+  display: grid;
+  grid-template-columns: 45% 2% 45%;
+  grid-gap: 5%;
+  height: 200px;
+}
+#connect p,
+h2 {
+  text-align: center;
+  font-size: large;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+#face {
+  text-align: center;
+}
+
+#face button {
+  width: 180px;
+  height: 40px;
+  background-color: rgb(251, 206, 202);
+  color: rgb(3, 63, 95);
+  border: cornflowerblue;
+  border-radius: 5px;
+  font-style: normal;
+  font-weight: bold;
+  font-size: medium;
+  cursor: pointer;
+  margin: 30px;
+  float: right;
+}
+#face button:hover {
+  background-color: rgb(3, 63, 95);
+  color: #fff;
+  transition: 0.5s;
+  cursor: pointer;
+}
+#Input {
+  text-align: center;
+  border: 1px solid rgb(3, 63, 95);
+  width: 92%;
+  border-radius: 3px;
+  margin-top: 2em;
+}
+#Input input {
+  height: 35px;
+  width: 75%;
+  border: rgb(3, 63, 95);
+}
+
+#Input button {
+  width: 110px;
+  height: 35px;
+  background-color: rgb(251, 206, 202);
+  color: rgb(3, 63, 95);
+  border: cornflowerblue;
+  border-radius: 5px;
+  font-style: normal;
+  font-weight: bold;
+  font-size: medium;
+  cursor: pointer;
+}
+#Input button:hover {
+  background-color: rgb(3, 63, 95);
+  color: #fff;
+  transition: 0.5s;
+  cursor: pointer;
+}
+
+#line {
+  background-color: rgb(3, 63, 95);
+  height: 150px;
+  width: 1px;
+}

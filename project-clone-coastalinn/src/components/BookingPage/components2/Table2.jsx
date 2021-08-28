@@ -68,7 +68,7 @@ export default function Table2({prop}) {
 }
 
 const dateArr = [
-Dates(0),Dates(1),Dates(2),Dates(3),Dates(4),Dates(5),Dates(6),Dates(7),Dates(8),Dates(9),Dates(10),Dates(11),Dates(12),Dates(13),Dates(14),Dates(15)
+Dates(0),Dates(1),Dates(2),Dates(3),Dates(4),Dates(5),Dates(6),Dates(7),Dates(8),Dates(9),Dates(10),Dates(11),Dates(12),Dates(13),Dates(14)
 ];
 
 function checkDiffDay(x){
@@ -102,7 +102,7 @@ const handleNext = (x)=>{
 
   return (
     <TableContainer component={Paper}>
-        
+
       <Table className={classes.table} aria-label="customized table">
         
               
@@ -135,7 +135,7 @@ const handleNext = (x)=>{
                 <TableCell className="tablerow-bg" align="center" colSpan={3}>
                     {/* <MaterialUIPickers/> */}
                 </TableCell>
-                <TableCell className="tablerow-bg" colSpan={4}>
+                <TableCell className="tablerow-bg" colSpan={3}>
                
                 </TableCell>
                 <TableCell className="tablerow-bg" align="right" colSpan={4}>
