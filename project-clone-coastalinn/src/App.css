@@ -13,3 +13,40 @@
     width: 50%;
     margin: auto;
 }
+hr{
+    border-bottom:none;
+}
+.flex{
+    float: right;
+}
+.margin-r{
+    margin-right: -10px;
+}
+.margin-l{
+    margin-left: -10px;
+}
+.tablerow-bg{
+    background-color: rgb(243,243,243);
+    font-size: 12px;
+}
+.icon-chevron-right{
+    border-radius: 100%;
+    background-color: white;
+    color: rgb(91,172,182);
+}
+
+.test{
+    border: solid;
+    background-color: pink;
+}
+
+.hoverGlow{
+    width: 2%;
+}
+.hoverGlow:hover{
+    background-color: rgb(212, 231, 238);
+}
+
+.fri-sat{
+    background-color: rgb(236,248,250);
+}
