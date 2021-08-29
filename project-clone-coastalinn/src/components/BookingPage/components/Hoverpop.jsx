@@ -14,7 +14,6 @@ const useStyles = makeStyles((theme) => ({
     backgroundColor:"black",
     aspectRatio:"220/120",
     width: "200px",
-    padding:"15px",
   },
   white:{
     color: "white",

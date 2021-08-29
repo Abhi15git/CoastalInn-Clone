@@ -55,6 +55,7 @@ grid2:{
   },
   color:{
       color: "rgb(91,172,182)",
+      fontWeight:"900"
   },
   typography :{
       margin: "-10px -16px",
@@ -77,7 +78,7 @@ const ProjectCardDemo = ()=> {
 
   return (
     <Card className={cx(cardStyles.root)} >
-      <CardHeader title="Property Information" className={cardStyles.color} titleTypographyProps={{variant:"subtitle1"}} />
+      <CardHeader title="Property Information" className={cardStyles.color} titleTypographyProps={{variant:"h6"}} />
       <hr />
       <div className={cx(cardStyles.grid,cardStyles.spacing)}>
       <CardContent className={cardStyles.content}>

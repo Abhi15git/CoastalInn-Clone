@@ -1,9 +1,11 @@
 import axios from 'axios';
 import React, { useEffect, useState } from 'react'
 import { useParams } from 'react-router-dom'
+import CusDetForm from './components2/CusDetForm';
 import RoomDetail from './components2/RoomDetail';
 import Table3 from './components2/Step2';
 import Table2 from './components2/Table2';
+import TnC from './components2/TnC';
 
 const Booking = () => {
     const {id} = useParams();
@@ -21,7 +23,9 @@ const Booking = () => {
            <div style={{display:"flex",padding:"10px",alignItems:"center"}}><div style={{backgroundColor:"rgb(72,161,171)",color:"white",padding:"2px 5px",borderRadius:"4px"}}>Step 2</div> &nbsp;&nbsp;<div style={{color:"rgb(67,74,80)"}}><b>Choose room occupants and optional extras</b></div></div>
            <Table3 />
            <div style={{display:"flex",padding:"10px",alignItems:"center"}}><div style={{backgroundColor:"rgb(72,161,171)",color:"white",padding:"2px 5px",borderRadius:"4px"}}>Step 3</div> &nbsp;&nbsp;<div style={{color:"rgb(67,74,80)"}}><b>Enter guest and payment details</b></div></div>
-          
+          <CusDetForm/>
+          <br />
+          <TnC/>
         </div>
     )
 }
