@@ -130,7 +130,7 @@ Prices will be charged in United States Dollars</StyledTableCell>
     rooms.map((item,i)=>(
         <StyledTableRow key={i}>
               <StyledTableCell component="th" scope="row">
-               <> {item.title}</> <Bookbtn prop={{text:"Book",fn:handleBtnClick,id:item}}/> 
+               <> <a href={`#${item.id}`}>{item.title}</a></> <Bookbtn prop={{text:"Book",fn:handleBtnClick,id:item}}/> 
               </StyledTableCell>
               <StyledTableCell style={{backgroundColor:"rgb(236,248,250)",width:"2%"}} align="right"><b>${item.price+100}</b></StyledTableCell>
               {dateArr.map((el,i) =>{
